@@ -54,7 +54,7 @@ body {
 
 .sidebar .nav .item.active i,
 .sidebar .nav .item i:hover{
-    color: #1263dd;
+    color: #ec0918;
 }
 
 .main{
@@ -95,16 +95,16 @@ body {
     gap: 4px;
 }
 .main .header .info .details .time i{
-    color: #66bb6a;
+    color: #1263dd;
 }
 .main .header .info a{
     text-decoration: none;
-    color: #1263dd;
-    background: #fff;
+    color: #111924;
+    background: #c5bbbb;
     padding: 12px 24px;
     font-weight: 500;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     transition: all 0.3s ease;
 }
 
@@ -304,3 +304,70 @@ body {
 }
 
 
+/* Responsive */
+
+@media screen and (max-width: 1330px) {
+    
+    .main{
+        margin-left: 86px;
+    }
+
+    .right-section .messages .item {
+        gap: 10px;
+    }
+    .right-section .messages .item img {
+        width: 48px;
+        height: 48px;
+    }
+    .right-section .messages .item .text > p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+
+    body{
+        flex-direction: column;
+    }
+    .sidebar{
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .sidebar .nav{
+        flex-direction: row;
+    }
+    .main{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right-section{
+        width: 100%;
+    }
+
+    .right-section .messages {
+        margin-bottom: 40px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .main .header h3{
+        margin-bottom: 20px;
+    }
+
+    .main .header .info a {
+        font-size: 12px;
+        padding: 10px 16px;
+    }
+
+    .main .header .info .details p{
+        font-size: 13px;
+    }
+    .main .call .clients .item .tag{
+        display: none;
+    }
+}
