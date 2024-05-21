@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Sidebar1</title>
+</head>
+<body>
+    
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button type="button" class="sidebar-burger" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </header>
+
+            <nav class="sidebar-menu">
+                <button type="button">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Accounts</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </button>               
+                <button type="button">
+                    <i class="fa-solid fa-database"></i>
+                    <span>Databases</span>
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-file-audio"></i>
+                    <span>AudioVibe</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class="fa-solid fa-music"></i>
+                    <span>Soundblast</span>
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Folders</span>
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Levels</span>
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-unlock"></i>
+                    <span>Security</span>
+                </button>
+            </nav>
+
+
+        </div>
+    </nav>
+
+
+    <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+
+</body>
+</html>
